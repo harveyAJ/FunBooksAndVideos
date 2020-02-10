@@ -3,7 +3,7 @@ using FluentAssertions;
 using FunBooksAndVideos.Api.Controllers;
 using FunBooksAndVideos.Api.Interfaces;
 using FunBooksAndVideos.Api.Models;
-using FunBooksAndVideos.Domain.enums;
+using FunBooksAndVideos.Api.Models.enums;
 using Microsoft.AspNetCore.Http;
 using Moq;
 using NUnit.Framework;

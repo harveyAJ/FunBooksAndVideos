@@ -19,6 +19,8 @@ namespace FunBooksAndVideos.Api.Services
             {
                 businessRule.Apply(purchaseOrder);
             }
+
+            //TODO: save purchase order to database
         }
     }
 }

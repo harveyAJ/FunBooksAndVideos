@@ -2,6 +2,7 @@
 using FunBooksAndVideos.Api.BusinessRules;
 using FunBooksAndVideos.Api.Interfaces;
 using FunBooksAndVideos.Api.Models;
+using FunBooksAndVideos.Api.Models.enums;
 using FunBooksAndVideos.Domain.enums;
 using Moq;
 using NUnit.Framework;

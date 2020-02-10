@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using FunBooksAndVideos.Api.Interfaces;
 using FunBooksAndVideos.Api.Models;
+using FunBooksAndVideos.Api.Models.enums;
 using FunBooksAndVideos.Api.Services;
 using FunBooksAndVideos.Domain.enums;
 using Moq;
@@ -20,7 +21,7 @@ namespace FunBooksAndVideos.Tests
             CustomerId = 135,
             Id = 1,
             TotalPrice = 10,
-            Items = new List<Item>() {
+            Items = new List<Item> {
                 new Item { Id = 1, Type = ItemType.Membership },
                 new Item { Id = 2, Type = ItemType.Product }
             }
@@ -42,7 +43,7 @@ namespace FunBooksAndVideos.Tests
         }
 
         [Test]
-        public void When_PurchaseOrder_Is_Processed_Each__Business_Rule_Are_Applied()
+        public void When_PurchaseOrder_Is_Processed_Each_Business_Rule_Is_Applied_With_Right_Parameter()
         {
             //Given
             _purchaseOrderService = new PurchaseOrderService(_businessRules.Object);

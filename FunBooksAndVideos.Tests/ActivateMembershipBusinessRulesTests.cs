@@ -2,6 +2,7 @@
 using FunBooksAndVideos.Api.BusinessRules;
 using FunBooksAndVideos.Api.Interfaces;
 using FunBooksAndVideos.Api.Models;
+using FunBooksAndVideos.Api.Models.enums;
 using FunBooksAndVideos.Domain.enums;
 using Moq;
 using NUnit.Framework;
@@ -44,13 +45,13 @@ namespace FunBooksAndVideos.Tests
 
         [Test]
         public void
-            When_PurchaseOrder_Contains_N_MemberShip_Items_ActivateMembership_Is_Called_N_Times_With_Right_Params()
+            When_PurchaseOrder_Contains_N_MemberShip_Items_ActivateMembership_Is_Called_N_Times_With_Right_Parameter()
         {
             //Given 
             _customerAccountService.Setup(x => x.ActivateMembership(It.IsAny<int>(), It.IsAny<int>()))
                 .Verifiable();
 
-            var order = new PurchaseOrder
+            var purchaseOrder = new PurchaseOrder
             {
                 CustomerId = 131,
                 Id = 5,
@@ -61,7 +62,7 @@ namespace FunBooksAndVideos.Tests
             };
 
             //When 
-            _activateMembershipBusinessRule.Apply(order);
+            _activateMembershipBusinessRule.Apply(purchaseOrder);
 
             //Then
             _customerAccountService.Verify(x => x.ActivateMembership(131, 1), Times.Once);

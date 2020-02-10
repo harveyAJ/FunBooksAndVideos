@@ -7,8 +7,8 @@ namespace FunBooksAndVideos.Api.Services
     {
         public void Generate(PurchaseOrder purchaseOrder)
         {
-            //Get Customer from purchaseOrder and send email with slip or something like that
-            //Could also store that shipping slip to DB
+            //TODO: Get Customer from purchaseOrder object and e.g. send email with slip (assuming Customer object has an email field)
+            //TODO: update the database
         }
     }
 }

@@ -1,7 +1,7 @@
 using System.Linq;
 using FunBooksAndVideos.Api.Interfaces;
 using FunBooksAndVideos.Api.Models;
-using FunBooksAndVideos.Domain.enums;
+using FunBooksAndVideos.Api.Models.enums;
 
 namespace FunBooksAndVideos.Api.BusinessRules
 {

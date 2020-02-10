@@ -1,4 +1,4 @@
-﻿namespace FunBooksAndVideos.Domain.enums
+﻿namespace FunBooksAndVideos.Api.Models.enums
 {
     public enum ItemType
     {

@@ -1,6 +1,4 @@
 using FunBooksAndVideos.Api.Interfaces;
-using FunBooksAndVideos.Api.Models;
-using FunBooksAndVideos.Domain.enums;
 
 namespace FunBooksAndVideos.Api.Services
 {
@@ -8,7 +6,8 @@ namespace FunBooksAndVideos.Api.Services
     {
         public void ActivateMembership(int customerId, int itemId)
         {
-            //Retrieve Customer from DB and apply given membership
+            //TODO: Retrieve Customer from DB and apply given membership from repository of membership items
+            //TODO: update database
         }
     }
 }

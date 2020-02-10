@@ -1,4 +1,4 @@
-﻿using FunBooksAndVideos.Domain.enums;
+﻿using FunBooksAndVideos.Api.Models.enums;
 
 namespace FunBooksAndVideos.Api.Models
 {
